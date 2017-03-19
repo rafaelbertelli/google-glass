@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Minha página</title>
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="stylesheet" href="../css/media.css" />
+    <script language="javascript" src="../javascript/funcoes.js"></script>
+  </head>
+  <body>
+    <div id="interface">
+      <header id="cabecalho">
+        <hgroup>
+          <h1>Google Glass</h1>
+          <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <figure>
+          <img id="icone" src="../img/glass-oculos-preto-peq.png" alt="Google Glass" />
+        </figure>
+        <nav id="menu">
+          <h1 class="titulo-menu">Menu Principal</h1>
+          <ul class="nostyle">
+            <li onmouseover="mudaImg('../img/home.png')" onmouseout="mudaImg('../img/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+            <li onmouseover="mudaImg('../img/especificacoes.png')" onmouseout="mudaImg('../img/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
+            <li onmouseover="mudaImg('../img/fotos.png')" onmouseout="mudaImg('../img/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+            <li onmouseover="mudaImg('../img/multimidia.png')" onmouseout="mudaImg('../img/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
+            <li onmouseover="mudaImg('../img/contato.png')" onmouseout="mudaImg('../img/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="corpo-full">
+        <article id="noticia-principal">
+          <header id="cabecalho-artigo">
+            <hgroup>
+              <h3>Glass > Multimídia</h3>
+              <h1>Sons e Vídeos</h1>
+              <h2>por Rafael Borges</h2>
+            </hgroup>
+          </header>
+          <div id="tv-radio">
+            <audio class="musica" controls="controls">
+              <source src="../media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg" />
+              Desculpe, mas não foi possível carregar o audio.
+              <!-- aula 31 do curso em vídeo para ver como colocar media nos navegadores, cada um exige um formato -->
+            </audio>
+            <video class="filme" controls="controls" poster="../img/video-mini03.jpg">
+              <source src="../media/getting-started.mp4" type="video/mp4" />
+              Desculpe, mas não foi possível carregar o vídeo.
+              <!-- aula 31 do curso em vídeo para ver como colocar media nos navegadores, cada um exige um formato -->
+            </video>            
+          </div>
+        </article>
+      </section>
+      <footer id="rodape">
+        <p>Copyright &copy; 2015 - by Rafael Borges</p>
+        <p>
+          <a href="https://www.facebook.com/rafaelbertelli89" target="_blank"> Facebook</a> |
+          <a href="https://www.facebook.com/rafaborgesfotografo" target="_blank">Rafa Borges Fotógrafo</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

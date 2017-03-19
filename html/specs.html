@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Minha página</title>
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="stylesheet" href="../css/specs.css" />
+    <script language="javascript" src="../javascript/funcoes.js"></script>
+  </head>
+  <body>
+    <div id="interface">
+      <header id="cabecalho">
+        <hgroup>
+          <h1>Google Glass</h1>
+          <h2>A revolução do Google está chegando</h2>
+        </hgroup>
+        <figure>
+          <img id="icone" src="../img/glass-oculos-preto-peq.png" alt="Google Glass" />
+        </figure>
+        <nav id="menu">
+          <h1 class="titulo-menu">Menu Principal</h1>
+          <ul class="nostyle">
+            <li onmouseover="mudaImg('../img/home.png')" onmouseout="mudaImg('../img/glass-oculos-preto-peq.png')"><a href="index.html">Home</a></li>
+            <li onmouseover="mudaImg('../img/especificacoes.png')" onmouseout="mudaImg('../img/glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
+            <li onmouseover="mudaImg('../img/fotos.png')" onmouseout="mudaImg('../img/glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
+            <li onmouseover="mudaImg('../img/multimidia.png')" onmouseout="mudaImg('../img/glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
+            <li onmouseover="mudaImg('../img/contato.png')" onmouseout="mudaImg('../img/glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="corpo-full">
+        <article id="noticia-principal">
+          <header id="cabecalho-artigo">
+            <hgroup>
+              <h3>Glass > Especificações</h3>
+              <h1>Raio-X no Google Glass</h1>
+              <h2>por Rafael Borges</h2>
+            </hgroup>
+          </header>
+          <p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.<p>
+          <img src="../img/glass-esquema-marcado.jpg" alt="Este é o Google Glass" usemap="#meu-mapa" width="500">
+          <map name="meu-mapa">
+            <area shape="poly" coords="182,219, 265,207, 267,243, 185,256" href="google-glass.html#tela" target="janela">
+            <area shape="circle" coords="158,243, 10" href="google-glass.html#camera" target="janela">
+            <area shape="circle" coords="77,52, 10" href="google-glass.html#bateria-gadgets" target="janela">
+            <area shape="poly" coords="28,143, 83,216, 84,252, 27,168" href="google-glass.html#sensores" target="janela">
+          </map>
+          <iframe src="google-glass.html" name="janela" id="frame-specs" width="410"></iframe>
+        </article>
+      </section>
+      <footer id="rodape">
+        <p>Copyright &copy; 2015 - by Rafael Borges</p>
+        <p>
+          <a href="https://www.facebook.com/rafaelbertelli89" target="_blank"> Facebook</a> |
+          <a href="https://www.facebook.com/rafaborgesfotografo" target="_blank">Rafa Borges Fotógrafo</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
